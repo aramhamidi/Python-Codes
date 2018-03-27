@@ -1,24 +1,40 @@
-Compare two commits, printing each line that is present in one commit but not the other.
-
+git diff <Commit ID old> <Commit ID new>
+	Compare two commits, printing each line that is present in one commit but not the other.
 	git diff will do this. It takes two arguments - the two commit ids to compare.
 	git diff considers the first argument as the "original", and the second argument
 	as the "new" version, so additions are lines present in the second argument but
-	not the first. 
+	not the first. this command is comparing commits inside the repository not local
+	working directory.
 
 
-Make a copy of an entire Git repository, including the history, onto your own computer.
-
+git clone
+	Make a copy of an entire Git repository, including the history, onto your own computer.
 	git clone will do this. It takes one argument - the url of the repository to copy. 
 	The history of changes to the directory or repository is copied.
 	The state of every file in the directory or repository is copied.
 
 
-Temporarily reset all files in a directory to their state at the time of a specific commit.
-
+git checkout
+	Temporarily reset all files in a directory to their state at the time of a specific commit.
 	git checkout will do this. It takes one argument - the commit ID to restore. 
 
 
-Show the commits made in this repository, starting with the most recent.
-
+git log
+	Show the commits made in this repository, starting with the most recent.
 	git log will do this. It doesn't take any arguments.
 
+git diff
+	Compares the files that are staged with the files in working directory. No arguments
+	should be provided.
+
+git diff --stage
+	Compares the files in staging area with the most recent commit in repository.
+
+git reset --hard
+	Disgards all the changes you made in files of your local working directory AND the
+	staging area. 
+	NOTE: Be very careful using this command, it is undoable! Cause you will lose all the
+	changes you made in local working directory and staging area. Those changes were not 
+	commited yet, so git doesn't have a snapshot of them. you do git reset --hard, you lose
+	the changes for ever.
+	 
