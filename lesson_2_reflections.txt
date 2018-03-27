@@ -8,6 +8,10 @@ What happens when you initialize a repository? Why do you need to do it?
 
 How is the staging area different from the working directory and the repository?
 What value do you think it offers?
+	
+	Staging area, is the area in between working directory and repository.
+	staging files before adding them to repo, gives us this opportunity to
+	think twice about the commits we want to make. It is a sort of confirmation.
 
 How can you use the staging area to make sure you have one commit per logical
 change?
