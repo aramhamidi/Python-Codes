@@ -17,6 +17,8 @@ git clone
 git checkout
 	Temporarily reset all files in a directory to their state at the time of a specific commit.
 	git checkout will do this. It takes one argument - the commit ID to restore. 
+	Also if your HEAD is 'detached' from when you checked out an old commit you can fix that,by
+	runing the command git checkout master.
 
 
 git log
