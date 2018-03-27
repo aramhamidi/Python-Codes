@@ -1,0 +1,57 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    If the previous version has been working fine, and after a change
+    all of a sudden it stops working, so most probably the specific
+    change made is reposible for the bug. Difference between two files
+    can luminate the source of bug.
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+    Being able to follow the sequence of progress, can easily help us with
+    finding the origin of where things started going wrong. Then we can revert
+    all the changes since that point, and redo everything, instead of spending
+    a long time on redoing everything from ectratch. In general, having access
+    to any sort of history, enables us to refer to the old versions and recover
+    any part that we have modified previously.
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Automatically created docs, are tedious to go through and they don't 
+    neccessarly carry the logical clue that will trigger your brain on an
+    specific topic. Notes helping you recall, need to be taken in our own
+    language and form. So each commit, needs to address onw logical change.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+	
+	Since changing one file might affect other files in a project, it makes
+	sence to be able to save multiple files in one commit. Then comparing 2
+	commits can give you all the information for all the changes in files, as
+	a log.
+    
+
+How can you use the commands git log and git diff to view the history of fibecaules?
+
+    git log will show all the changes, such as deletions and additions as 
+    well as the commit message for each commit. Then we can use git diff to 
+    specifically compare two commits with eachother. git log gives the whole
+    history of changes, and git diff compares.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+    As long as it is possible to revert to a previous version, there is no
+    regret in exploring possibilities! What is better than this in codeing!
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Projects! Work or personal!
+    
+How often you should make a commit?
+	
+	A good rule of thumb is to make one commit per logical change. For example, if you fixed a typo, then fixed a bug in a separate part of the file, you should use one commit for each change since they are logically separate. If you do this, each commit will have one purpose that can be easily understood. Git allows you to write a short message explaining what was changed in each commit, and that message will be more useful if each commit has a single logical change.
+
