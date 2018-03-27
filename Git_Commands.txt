@@ -23,9 +23,12 @@ git checkout
 	has a more human friendly name rather than a ID.
 
 
-git log
+git log (--graph) (--online) (branch name1) (branch name2) ...(branch name n)
 	Show the commits made in this repository, starting with the most recent.
 	git log will do this. It doesn't take any arguments.
+	(--graph) Shows it as a graph
+	(--online) makes it more shorter
+	(branchnames) provides logs of those branches only.
 
 git diff
 	Compares the files that are staged with the files in working directory. No arguments
