@@ -18,7 +18,9 @@ git checkout
 	Temporarily reset all files in a directory to their state at the time of a specific commit.
 	git checkout will do this. It takes one argument - the commit ID to restore. 
 	Also if your HEAD is 'detached' from when you checked out an old commit you can fix that,by
-	runing the command git checkout master.
+	runing the command git checkout master. 
+	You can checkout a branch using this command just like checkout a commit, but each branch 
+	has a more human friendly name rather than a ID.
 
 
 git log
@@ -39,4 +41,10 @@ git reset --hard
 	changes you made in local working directory and staging area. Those changes were not 
 	commited yet, so git doesn't have a snapshot of them. you do git reset --hard, you lose
 	the changes for ever.
-	 
+
+git branch
+	Shows all the current branches.
+
+git branch <New Branch Name>
+	Creates a new branch named "New Branch Name"
+
