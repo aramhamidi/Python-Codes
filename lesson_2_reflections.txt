@@ -1,4 +1,4 @@
-What happens when you initialize a repository? Why do you need to do it?
+1. What happens when you initialize a repository? Why do you need to do it?
 
 	git creats a new empty repository and lists all the untracked files in 
 	it if there any. If the Repo is empty then it show a fatal error saying
@@ -6,23 +6,27 @@ What happens when you initialize a repository? Why do you need to do it?
 	to the current commit you are on and at git init, git never creates a commit
 	for you. YOU should creat commits.
 
-How is the staging area different from the working directory and the repository?
+2. How is the staging area different from the working directory and the repository?
 What value do you think it offers?
 	
 	Staging area, is the area in between working directory and repository.
 	staging files before adding them to repo, gives us this opportunity to
 	think twice about the commits we want to make. It is a sort of confirmation.
 
-How can you use the staging area to make sure you have one commit per logical
+3. How can you use the staging area to make sure you have one commit per logical
 change?
+	
+	with comparing stage area and repository's most recent commit using
+	git diff --staged, we can make sure that each time we make a commit 
+	it only includes one logical changes!
 
-What are some situations when branches would be helpful in keeping your history
+4. What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-How do the diagrams help you visualize the branch structure?
+5. How do the diagrams help you visualize the branch structure?
 
-What is the result of merging two branches together? Why do we represent it in
+6. What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-What are the pros and cons of Git's automatic merging vs. always doing merges
+7. What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
