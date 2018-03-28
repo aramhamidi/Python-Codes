@@ -28,6 +28,9 @@ organized? How would branches help?
 
 5. How do the diagrams help you visualize the branch structure?
 
+	It shows the parent child relationship and also the fact that some of 
+	the branches are not reachable and why.
+
 6. What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
