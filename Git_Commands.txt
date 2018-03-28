@@ -56,4 +56,20 @@ git checkout -b <New Branch Name>
 		git branch <New Branch Name>
 		git checkout <New Branch Name>
 
+git gc
+	If a branch is deleted and leaves some commits unreachable from existing branches, those
+	commits will continue to be accessible by commit id, until Git’s garbage collection runs.
+	This will happen automatically from time to time, unless you actively turn it off.
+	You can also run this process manually with git gc.
 
+git merge <branch1> <branch2>
+	This command merges branch 2 into branch 1. The order doesn't matter.The key is to remember
+	that git merge always merges all the specified branches into the currently checked out branch,
+	creating a new commit for that branch.
+	If you have already checked out branch1, you can easily say git merge branch2 to do the
+	same thing. but it is always a good idea to use both, just to know what branch you are
+	merging into which branch.
+	Commits from branch2 will be reachable from branch1. After the merge the HEAD is on branch1.
+
+git show commit_id
+	The command is to compare a commit to its parent.
