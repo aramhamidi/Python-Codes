@@ -51,3 +51,9 @@ git branch
 git branch <New Branch Name>
 	Creates a new branch named "New Branch Name"
 
+git checkout -b <New Branch Name>
+	this command combines two commands: 
+		git branch <New Branch Name>
+		git checkout <New Branch Name>
+
+
