@@ -33,6 +33,9 @@ organized? How would branches help?
 
 6. What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	It seems scary, but all it does is combinig a branch with another one, and
+	usually we want to combine a branch into master! so first we need to checkout
+	master.
 
 7. What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
