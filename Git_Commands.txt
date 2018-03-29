@@ -70,6 +70,8 @@ git merge <branch1> <branch2>
 	same thing. but it is always a good idea to use both, just to know what branch you are
 	merging into which branch.
 	Commits from branch2 will be reachable from branch1. After the merge the HEAD is on branch1.
+	Merge creates a new commit(Node) with multiple parents, and the label will be the one that 
+	you have checked out! That is why sometimes HEAD can be ahead of master I guess.
 
 git show commit_id
 	The command is to compare a commit to its parent.
