@@ -12,7 +12,8 @@ local?
 2. Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Since pulling from the remote repo may be overwritting all the changes
+    I have made in my local repository.
 
 3. Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
