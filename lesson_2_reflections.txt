@@ -33,9 +33,17 @@ organized? How would branches help?
 
 6. What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+	
 	It seems scary, but all it does is combinig a branch with another one, and
 	usually we want to combine a branch into master! so first we need to checkout
 	master.
 
 7. What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+	
+	automatic merging is great cause it saves time to catch the differences
+	between colaborations. The fact that you cannot proceed without resolving 
+	the conflict might be a little bit tedious but it is how things should work!
+	the places that automatic merge cannot be done, is better to be resolve by
+	colaborator decisitons. It is safe, at least with the current machine learning 
+	technology wr have.
