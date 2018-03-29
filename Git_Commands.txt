@@ -75,3 +75,23 @@ git merge <branch1> <branch2>
 
 git show commit_id
 	The command is to compare a commit to its parent.
+
+git remote
+	shows the remote repository for the local repo you are in. If there is no remote, nothing
+	will be the output.
+
+git remote <remote_repo_name> <URL of remote repo>
+	it adds the github repo, as the remote repo for the local repo you are currently in.
+	Commonly if you have only one remote for the repo, we name it "origin".
+
+git rmeote -v 
+	'v' stands for vebose and means that git remote outputs more information,
+	such as the origin(remote repo) URL.
+
+git push <URL for remote> <local_branch_name>
+	it pushes all the commits in local repo to the remote repo on Github.
+
+git pull <Name of remote Repo> <name of the branch on remote repo>
+	pulls all the commits in remote repo (usually origin) on specific branch of it (usually master). remote repo on git hub can also have multiple branches, you need to 
+	specify which one you want to pull from. 
+	when you pull, the label of head will be updated to the master*  
