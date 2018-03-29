@@ -88,7 +88,7 @@ git rmeote -v
 	'v' stands for vebose and means that git remote outputs more information,
 	such as the origin(remote repo) URL.
 
-git push <URL for remote> <local_branch_name>
+git push <name of remote repo branch> <local_branch_name>
 	it pushes all the commits in local repo to the remote repo on Github.
 
 git pull <Name of remote Repo> <name of the branch on remote repo>
