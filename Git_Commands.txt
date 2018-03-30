@@ -82,7 +82,11 @@ git remote
 
 git remote <remote_repo_name> <URL of remote repo>
 	it adds the github repo, as the remote repo for the local repo you are currently in.
-	Commonly if you have only one remote for the repo, we name it "origin".
+	Commonly if you have only one remote for the repo, we name it "origin". You only
+	need to add a remote repo for repositories that you create on your local machine
+	for the first time. 
+	If you clone a repo, Github automatically creates a pointer to point to the remote 
+	repository you cloned it from, named origin.
 
 git rmeote -v 
 	'v' stands for vebose and means that git remote outputs more information,
@@ -95,3 +99,52 @@ git pull <Name of remote Repo> <name of the branch on remote repo>
 	pulls all the commits in remote repo (usually origin) on specific branch of it (usually master). remote repo on git hub can also have multiple branches, you need to 
 	specify which one you want to pull from. 
 	when you pull, the label of head will be updated to the master*  
+
+	Note: git pull origin master == (git fetch origin + then git merge master origin/master)
+
+git fork
+	This allows one to clone someone's repo from Github, on Github server, without 
+	copying it to one's local machine! This way, the copied version's origin will
+	always be recognizable! It is the right thing to do when collaborating or using
+	someone else's code.
+	Later we can clone the forked repo, from our own github repo to our local repo.
+	Github will keep track of number of people who have forked your repo. All of the
+	forks are linking back to the original repo.
+
+	Note: Branches happen on a single Repository. It can be on github or local machin.
+	Fork: fork only happens on Github server. It doesn't have anything to do with local
+		repos. 
+	Clone: Clone on the other hand is simply copy. this copy can be made from a Github
+		repo to a local repo, or from a local repo to another local repo. Basically
+		clone can be done between any two repos.
+
+Note: When you setup a remote, Github stores local copies of all the remote branches, 
+which each contains the state of remote branches as of the last time you pushed/pulled
+the branch.
+
+git fetch <remote repo>
+	you can update just the local copy of remote/branch (and leaving your actual local
+	copy alone) by fetch. fetch is going to download all the new changes from remote/branch
+	then you can use get log and get diff to see what has been changed between your
+	local master branch and remote(origin) branch(master). Now you can use git merge to 
+	combine all these changes together on your local branches!
+
+	Remember:git pull origin master == (git fetch origin + then git merge master origin/master
+
+	After git fetch, your branch will point to the lates commit on remote branch(origin/master) commit in a new node. And your local master branch will point at your lates local
+	commit! Cause you haven't merged yet! At this point if you run "git status" git will tell 
+	you that your branch is "out_of_sync" with remote branch(origin/master)
+
+Not: Fast Forward merging happens when you merge to commits that one is the ancestor of the 
+the other. Or one commit is reachable by the other.
+				Node <--- NodeA <--- NodeB
+				git merge NodeA NodeB
+				Node <--- NodeA <--- NodeB
+							^		  ^	
+							|_________|______NodeA (Now it has both commits as a parent
+											        However, NodeB already has all the
+											        history of NodeA so we dont need to
+											        add the new NodeA, we just update 
+											        label of NodeA to point to NodeB 
+											        instead!)
+				Node <--- NodeA <--- NodeB,A
