@@ -25,11 +25,12 @@ use one instead of another?
 		repo to a local repo, or from a local repo to another local repo. Basically
 		clone can be done between any two repos.
 	I will not use one for another! Each one has it's own purposes.
-	
+
 4. What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    I am not so sure, but probably it means to keep track of all the changes
+    we made localy since the last update we pulled from remote.
 
 5. How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
